@@ -28,5 +28,7 @@ Invoke entry on tamper condition: `STM32V8::Ashes::Protocol()` This function **n
  
 # License
  
-Copyright (c) OvO
+**Copyright (c) OvO**
+
 **THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.**
+**GNU AFFERO GPL Version 3**
