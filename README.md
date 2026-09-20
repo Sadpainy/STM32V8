@@ -2,7 +2,7 @@
 
 ![Tests](https://img.shields.io/badge/Tests-passing-brightgreen?style=plastic&logo=vitest&logoColor=white&labelColor=555555)
 ![Hardware](https://img.shields.io/badge/Hardware-Destruct-critical?style=plastic&logo=nuclear&logoColor=white&labelColor=555555)
-![Warning](https://img.shields.io/badge/Warning-Malware-critical?style=plastic&logo=virustotal&logoColor=white&labelColor=555555)
+![Warning](https://img.shields.io/badge/Warning-Destruct-critical?style=plastic&labelColor=555555)
 ![Build](https://img.shields.io/badge/Build-passing-brightgreen?style=plastic&labelColor=555555)
 ![License](https://img.shields.io/badge/License-AGPL_3.0-blue?style=plastic&logo=gnu&logoColor=white&labelColor=555555)
 ![Platform](https://img.shields.io/badge/Platform-Windows-0078D6?style=plastic&labelColor=555555)
