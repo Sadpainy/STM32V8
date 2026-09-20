@@ -6,7 +6,7 @@ This is bare‑metal anti‑tamper self‑destruct implementation for STM32H7. P
  
 # Compile
  
-Toolchain: arm‑none‑eabi‑gcc, C++17 freestanding
+Toolchain: **arm‑none‑eabi‑gcc, C++17 freestanding**
  
 ```cpp
 arm-none-eabi-g++ -std=c++17 -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -ffreestanding -fno-exceptions -fno-rtti -Os -Wall -Wextra -Wpedantic -c STM32V8.cpp -o STM32V8.o
