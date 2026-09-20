@@ -1,4 +1,10 @@
 # STM32V8 Secure Self‑Destruct Firmware
+
+![Tests](https://img.shields.io/badge/Tests-passing-brightgreen?style=plastic&logo=vitest&logoColor=white&labelColor=555555)
+![Hardware](https://img.shields.io/badge/Hardware-Destruct-critical?style=plastic&logo=nuclear&logoColor=white&labelColor=555555)
+![Warning](https://img.shields.io/badge/Warning-Malware-critical?style=plastic&logo=virustotal&logoColor=white&labelColor=555555)
+![Build](https://img.shields.io/badge/Build-passing-brightgreen?style=plastic&labelColor=555555)
+![License](https://img.shields.io/badge/License-AGPL_3.0-blue?style=plastic&logo=gnu&logoColor=white&labelColor=555555)
  
 This is bare‑metal anti‑tamper self‑destruct implementation for STM32H7. Performs debugger detection, memory & flash secure wiping, crypto key zeroization and irreversible RDP‑L2 lock on tamper events.
 
@@ -11,7 +17,6 @@ Toolchain: **arm‑none‑eabi‑gcc, C++17 freestanding**
 ```cpp
 arm-none-eabi-g++ -std=c++17 -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -ffreestanding -fno-exceptions -fno-rtti -Os -Wall -Wextra -Wpedantic -c STM32V8.cpp -o STM32V8.o
 ```
- 
  
 Link example:
  
