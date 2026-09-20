@@ -5,6 +5,7 @@
 ![Warning](https://img.shields.io/badge/Warning-Malware-critical?style=plastic&logo=virustotal&logoColor=white&labelColor=555555)
 ![Build](https://img.shields.io/badge/Build-passing-brightgreen?style=plastic&labelColor=555555)
 ![License](https://img.shields.io/badge/License-AGPL_3.0-blue?style=plastic&logo=gnu&logoColor=white&labelColor=555555)
+![Platform](https://img.shields.io/badge/Platform-Windows-0078D6?style=plastic&labelColor=555555)
  
 This is bare‑metal anti‑tamper self‑destruct implementation for STM32H7. Performs debugger detection, memory & flash secure wiping, crypto key zeroization and irreversible RDP‑L2 lock on tamper events.
 
