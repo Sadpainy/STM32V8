@@ -16,14 +16,25 @@ This is bare‑metal anti‑tamper self‑destruct implementation for STM32H7. P
 Toolchain: **arm‑none‑eabi‑gcc, C++17 freestanding**
  
 ```cpp
-arm-none-eabi-g++ -std=c++17 -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -ffreestanding -fno-exceptions -fno-rtti -Os -Wall -Wextra -Wpedantic -c STM32V8.cpp -o STM32V8.o
+arm-none-eabi-g++ -c STM32V8.cpp -o STM32V8.o \
+  -mcpu=cortex-m85 \
+  -mthumb \
+  -std=c++17 \
+  -mcmse \
+  -Os \
+  -ffunction-sections -fdata-sections
 ```
  
 Link example:
  
-```cpp  
-arm-none-eabi-ld STM32V8.o startup_stm32h7xx.o user_code.o -T stm32h7_custom.ld -o firmware.elf
-arm-none-eabi-objcopy -O binary firmware.elf firmware.bin
+```cpp
+arm-none-eabi-g++ STM32V8.o -o STM32V8.elf \
+  -mcpu=cortex-m85 \
+  -mthumb \
+  -mcmse \
+  -Wl,--gc-sections \
+  -T linker_script.ld \
+  -specs=nosys.specs -specs=nano.specs
 ```
  
 Invoke entry on tamper condition: `STM32V8::Ashes::Protocol()` This function **never returns.**
